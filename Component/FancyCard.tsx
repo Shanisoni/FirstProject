@@ -17,7 +17,7 @@ export default function FancyCard() {
             <Text style={styles.cardTitle}>Beautiful Beach</Text>
             <Text style={styles.cardLabel}>Pink City, Jiapur</Text>
             <Text style={styles.cardDescription}>A serene beach with golden sands and clear blue waters.</Text>
-            <Text style={styles.cardFooter}> 12 minutes away</Text>
+            <Text style={styles.cardFooter}>12 minutes away</Text>
           </View>
         </View>
       </View>
@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
     height: 380,
     width: 350,
     borderRadius: 10,
-    marginHorizontal: 20,
+    marginHorizontal: 70,
     marginVertical: 10,
     overflow: 'hidden',
   },
@@ -66,7 +66,7 @@ const styles = StyleSheet.create({
         marginVertical: 5,
     },
     cardFooter: {
-        fontSize: 10,
+        fontSize: 12,
         color: 'black',
         // marginTop: 10,
     },
