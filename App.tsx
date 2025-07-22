@@ -17,6 +17,7 @@ import {
 import React from 'react';
 import FlatCards from './Component/FlatCards';
 import ElevatedCard from './Component/ElevatedCard';
+import FancyCard from './Component/FancyCard';
 
 
 
@@ -28,6 +29,7 @@ function App() {
       <ScrollView>
         <FlatCards/>
         <ElevatedCard/>
+        <FancyCard/>
       </ScrollView>
     </SafeAreaView>
    

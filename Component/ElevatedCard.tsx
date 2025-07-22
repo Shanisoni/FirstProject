@@ -6,7 +6,7 @@ export default function ElevatedCard() {
   return (
     <View>
       <Text style={styles.headingtext}>Elevated Card</Text>
-      <ScrollView style={styles.container}>
+      <ScrollView horizontal={true} style={styles.container}>
         <View style={[styles.card , styles.cardElevated]}>
           <Text> Tap</Text>
         </View>
@@ -47,6 +47,8 @@ const styles = StyleSheet.create({
 
   cardElevated:{
     backgroundColor: 'orange',
+    elevation: 10,
+    textShadowOffset: { width: 10, height: 2 },
   }
 
 })                                                                    
