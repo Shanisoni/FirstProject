@@ -15,6 +15,8 @@ import {
   } from 'react-native';
 
 import React from 'react';
+import FlatCards from './Component/FlatCards';
+import ElevatedCard from './Component/ElevatedCard';
 
 
 
@@ -24,12 +26,20 @@ function App() {
   return (
     <SafeAreaView>
       <ScrollView>
-        <Text> Shani Soni</Text>
+        <FlatCards/>
+        <ElevatedCard/>
       </ScrollView>
     </SafeAreaView>
    
   );
 }
+
+export default App;
+
+
+
+
+
 
 // const styles = StyleSheet.create({
 //   container: {
@@ -37,4 +47,4 @@ function App() {
 //   },
 // });
 
-export default App;
+
