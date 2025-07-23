@@ -1,11 +1,11 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, ScrollView } from 'react-native'
 import React from 'react'
 
 export default function FlatCards() {
   return (
     <View>
       <Text style = {styles.headingtext}>FlatCards</Text>
-      <View style = {styles.container}>
+      <ScrollView style = {styles.container} horizontal={true}>
         <View style = {[styles.card , styles.cardOne]}>
             <Text style = {styles.cardOne}>Red</Text>
         </View>
@@ -18,7 +18,13 @@ export default function FlatCards() {
         <View style = {[styles.card , styles.cardThree]}>
             <Text style = {styles.cardThree}>Green</Text>
         </View>
-      </View>
+        <View style = {[styles.card , styles.cardOne]}>
+            <Text style = {styles.cardOne}>Red</Text>
+        </View>
+        <View style = {[styles.card , styles.cardTwo]}>
+            <Text style = {styles.cardTwo}>Blue</Text>
+        </View>
+      </ScrollView>
     </View>
   )
 }
